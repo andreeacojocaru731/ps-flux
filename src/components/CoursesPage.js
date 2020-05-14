@@ -8,7 +8,7 @@ function CoursesPage() {
         getCourses().then(_courses => { setCourses(_courses) })
     }, [])
 
-    return <>
+    return (<>
         <h2>Courses</h2>
         <table className="table">
             <thead>
@@ -20,16 +20,18 @@ function CoursesPage() {
             </thead>
             <tbody>
                 {courses.map(course => {
-                    return (<tr key={course.id}>
-                        <td>{course.title}</td>
-                        <td>{course.authorId}</td>
-                        <td>{course.category}</td>
-                    </tr>)
+                    return (
+                        <tr key={course.id}>
+                            <td>{course.title}</td>
+                            <td>{course.authorId}</td>
+                            <td>{course.category}</td>
+                        </tr>
+                    );
                 })}
             </tbody>
         </table>
     </>
-
+    )
 }
 
 export default CoursesPage;
