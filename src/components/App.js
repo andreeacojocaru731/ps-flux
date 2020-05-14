@@ -4,7 +4,7 @@ import Header from "./common/Header";
 import CoursesPage from "./CoursesPage";
 import { Route, Switch } from "react-router-dom";
 import HomePage from './HomePage';
-import PageNotFound from "./NotFoundPage";
+import PageNotFound from "./PageNotFound";
 
 function App() {
 
